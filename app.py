@@ -52,7 +52,7 @@ class ImageApp:
         self.image_label.bind("<Motion>", self.show_coordinates)
 
     def load_image(self):
-        file_types = [("Изображения", "*.png *.jpg *.jpeg")]
+        file_types = [("Изображения", "*.png *.jpg")]
         filename = filedialog.askopenfilename(filetypes=file_types)
 
         if filename:
